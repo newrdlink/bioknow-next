@@ -1,0 +1,55 @@
+$font-title-m: normal 700 18px /22px Gilroy;
+$font-subtitle-m: normal 400 12px /150% Gilroy;
+$font-link-m: normal 700 12px /150% Gilroy;
+
+
+.cardArticle {
+  height: 355px;
+  width: 100%;
+  max-width: 350px;
+  padding: 0;
+}
+
+.cardArticle__wrapper {
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.cardArticle__content {
+  position: relative;
+  max-width: 293px;
+  background: #FFF;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: -90px auto 0;
+  padding: 32px;
+  z-index: 1;
+}
+
+.cardArticle__title {
+  margin: 0 0 20px 0;
+  font: $font-title-m;
+  color: #101010;
+  text-align: center;
+}
+
+.cardArticle__subtitle {
+  margin: 0 0 12px 0;
+  font: $font-subtitle-m;
+  color: #101010;
+  text-align: center;
+}
+
+.cardArticle__link {
+  margin: 0;
+  display: block;
+  font: $font-link-m;
+  color: #ED4C5C;
+  text-align: center;
+  text-decoration: none;
+}

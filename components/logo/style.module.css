@@ -1,0 +1,12 @@
+.logo {
+  /* width: 100%; */
+}
+
+.logo__image {
+  /* height: 50px; */
+  /* width: auto; */
+}
+
+.logo:hover {
+  cursor: pointer;
+}

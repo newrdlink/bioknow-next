@@ -1,0 +1,19 @@
+$font-title-m: normal 700 36px /43px Gilroy;
+
+.topArticles {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 63px 0 124px;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+}
+
+.topArticles__items {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}

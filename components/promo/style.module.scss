@@ -1,0 +1,43 @@
+$font-title-m: normal 700 36px /43px Gilroy;
+$font-subtitle-m: normal 400 14px /140% Gilroy;
+$font-link-m: normal 400 14px /140% Gilroy;
+
+.promo {
+  width: 100%;
+  // max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 94px 165px;
+  background-color: #fff;
+}
+
+.promo__img {
+  position: relative;
+  max-width: 478px;
+  width: 100%;
+  height: 311px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.promo__content {
+  max-width: 445px;
+}
+
+.promo__title {
+  margin: 44px 0 24px 0;
+  font: $font-title-m;
+  color: #000;
+}
+
+.promo__subtitle {
+  margin: 0 0 20px 0;
+  font: $font-subtitle-m;
+  color: #000;
+}
+
+.promo__link {
+  font: $font-link-m;
+  color: #ED4C5C;
+}

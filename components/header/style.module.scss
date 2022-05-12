@@ -1,0 +1,15 @@
+$font-m: normal 400 26px /1.2 Gilroy;
+
+.header {
+  position: relative;
+  padding: 20px 165px 0 165px;
+  width: 100%;
+  font: $font-m;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  background-color: transparent;
+  color: aliceblue;
+  justify-content: space-between;
+  margin: 0 0 100px 0;
+}

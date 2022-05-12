@@ -1,0 +1,17 @@
+.navItem {
+  font-size: 14px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.navItem:nth-of-type(5n) {
+  margin-right: 0;
+}
+
+.navItem__link {
+  text-decoration: none;
+}
+
+.navItem__link_active {
+  text-decoration: underline;
+}
