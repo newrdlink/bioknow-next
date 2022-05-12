@@ -1,0 +1,39 @@
+.programm {
+  width: 100%;
+  padding: 95px 165px;
+  background: #ED4C5C;
+  display: flex;
+  justify-content: space-between;
+}
+
+.programm__content {
+  max-width: 445px;
+}
+
+.programm__images {
+  position: relative;
+}
+
+.programm__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 445px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.programm__wrapper_pos_one {
+  position: absolute;
+  left: -44px;
+  max-width: 380px;
+  top: 25px;
+  opacity: .7;
+}
+
+.programm__wrapper_pos_two {
+  position: absolute;
+  right: -44px;
+  max-width: 380px;
+  top: 25px;
+  opacity: .7;
+}

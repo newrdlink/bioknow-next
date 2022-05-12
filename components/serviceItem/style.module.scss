@@ -1,3 +1,46 @@
 .serviceItem {
+  width: 100%;
   max-width: 255px;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.serviceItem:hover {
+  cursor: pointer;
+}
+
+.serviceItem__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 66px;
+  max-width: 50px;
+  margin: 20px auto 0;
+}
+
+.one {
+  max-width: 60px;
+}
+
+.two {
+  max-width: 80px;
+}
+
+.four {
+  max-width: 60px;
+}
+
+.serviceItem__num {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+  text-align: center;
+  color: rgba(16, 16, 16, 0.08);
 }

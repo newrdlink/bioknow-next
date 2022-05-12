@@ -1,5 +1,5 @@
 import styles from './style.module.scss'
-import { TopArticles, Promo, Services } from '/components'
+import { TopArticles, Promo, Services, Programm } from '/components'
 
 const Main = () => {
 
@@ -8,6 +8,7 @@ const Main = () => {
       <Promo />
       <TopArticles />
       <Services />
+      <Programm />
     </div>
   )
 }

@@ -2,8 +2,9 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Titles } from '/components'
 
-const CardArticle = ({ title, subtitle, mainImage = '', id }) => {
+const CardArticle = ({ title = '', subtitle, mainImage = '', id }) => {
   // console.log(mainImage)
   // const variants = {
   //   hidden: { opacity: 0, x: -200, y: 0 },
@@ -21,8 +22,14 @@ const CardArticle = ({ title, subtitle, mainImage = '', id }) => {
         <Image src={mainImage} alt={title} layout='fill' />
       </div>
       <div className={styles.cardArticle__content}>
-        <h5 className={styles.cardArticle__title}>{title}</h5>
-        <p className={styles.cardArticle__subtitle}>{subtitle}</p>
+        <Titles.TitleCardItem
+          title={title}
+          place="cardArticle"
+        />
+        <Titles.SubtitleCardItem
+          subtitle={subtitle}
+          place="articleCard"
+        />
         <Link href={`/articles/${id}`}><a className={styles.cardArticle__link}>Читать далее...</a></Link>
       </div>
     </li>

@@ -2,7 +2,6 @@ $font-title-m: normal 700 18px /22px Gilroy;
 $font-subtitle-m: normal 400 12px /150% Gilroy;
 $font-link-m: normal 700 12px /150% Gilroy;
 
-
 .cardArticle {
   height: 355px;
   width: 100%;
@@ -29,13 +28,6 @@ $font-link-m: normal 700 12px /150% Gilroy;
   margin: -90px auto 0;
   padding: 32px;
   z-index: 1;
-}
-
-.cardArticle__title {
-  margin: 0 0 20px 0;
-  font: $font-title-m;
-  color: #101010;
-  text-align: center;
 }
 
 .cardArticle__subtitle {

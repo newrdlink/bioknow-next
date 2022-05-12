@@ -12,8 +12,8 @@ export const items = [
     path: '/articles'
   },
   {
-    name: 'материалы',
-    path: '/materials'
+    name: 'услуги',
+    path: '/services'
   },
   {
     name: 'программы',

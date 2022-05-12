@@ -11,8 +11,10 @@ import CardArticle from "./cardArticle"
 import MainTitle from "./mainTitle"
 import Promo from "./promo"
 import Services from "./services"
-import Titles from "./smallElements"
+import Titles from "./titles"
 import ServiceItem from "./serviceItem"
+import Programm from "./programm"
+import MButton from "./button"
 
 export {
   Header,
@@ -30,4 +32,6 @@ export {
   Services,
   Titles,
   ServiceItem,
+  Programm,
+  MButton,
 }
