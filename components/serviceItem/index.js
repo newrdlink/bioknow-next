@@ -1,5 +1,5 @@
 import styles from './style.module.scss'
-import { Titles } from '/components'
+import { titles } from '/components'
 import Image from 'next/image'
 import cn from 'classnames'
 import { motion } from "framer-motion"
@@ -14,11 +14,11 @@ const ServiceItem = ({ title, image, id, type, subtitle }) => {
         <Image src={image.src} alt={`Иконка ${title}`} layout='fill' />
       </div>
       <span className={styles.serviceItem__num}>{`0${id}`}</span>
-      <Titles.TitleCardItem
+      <titles.TitleCardItem
         title={title}
         place='serviceItem'
       />
-      <Titles.SubtitleCardItem
+      <titles.SubtitleCardItem
         subtitle={subtitle}
         place="serviceCard"
       />

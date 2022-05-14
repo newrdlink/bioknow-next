@@ -1,26 +1,29 @@
 import styles from './style.module.scss'
-import { Titles } from '/components'
+import { useRouter } from 'next/router'
+import { titles, MButton } from '/components'
 import Image from 'next/image'
 import cn from 'classnames'
 import img from '../../images/programm1.jpg'
-import { MButton } from '/components'
 
 const Programm = () => {
-
+  const router = useRouter()
+  // console.log(router)
   return (
     <section className={styles.programm}>
       <div className={styles.programm__content}>
-        <Titles.TitleBlock
+        <titles.TitleBlock
           title="Stay focused on saving money"
           place="programm"
         />
-        <Titles.SubtitleBlock
+        <titles.SubtitleBlock
           subtitle="It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!"
           place="programm"
         />
         <MButton
           name="Подробнее"
           place="programm"
+          whileHover={{ x: 20 }}
+          onClick={() => router.push('/programms')}
         />
       </div>
       <div className={styles.programm__images}>

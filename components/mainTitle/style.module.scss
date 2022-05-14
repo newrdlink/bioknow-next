@@ -23,18 +23,6 @@ $font-button-m: normal 700 14px /17px Gilroy;
   text-align: center;
 }
 
-.mainTitle__button {
-  height: 50px;
-  width: 160px;
-  color: #ED4C5C;
-  font: $font-button-m;
-  background: #FFF;
-  border: 0;
-  border-radius: 6px;
-  margin: 0 0 151px 0;
-  text-transform: uppercase;
-}
-
 .mainTitle__button:hover {
   cursor: pointer;
 }

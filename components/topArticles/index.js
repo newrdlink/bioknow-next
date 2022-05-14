@@ -1,12 +1,12 @@
 import styles from './style.module.scss'
 import { articles } from '../../temp/articles'
-import { CardArticle, Titles } from '/components'
+import { CardArticle, titles } from '/components'
 
 const TopArticles = () => {
   // console.log(articles)
   return (
     <section className={styles.topArticles}>
-      <Titles.TitleBlock
+      <titles.TitleBlock
         title="Популярные статьи"
         place="topArticles" />
       <ul className={styles.topArticles__items}>

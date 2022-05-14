@@ -2,7 +2,7 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Titles } from '/components'
+import { titles } from '/components'
 
 const CardArticle = ({ title = '', subtitle, mainImage = '', id }) => {
   // console.log(mainImage)
@@ -22,11 +22,11 @@ const CardArticle = ({ title = '', subtitle, mainImage = '', id }) => {
         <Image src={mainImage} alt={title} layout='fill' />
       </div>
       <div className={styles.cardArticle__content}>
-        <Titles.TitleCardItem
+        <titles.TitleCardItem
           title={title}
           place="cardArticle"
         />
-        <Titles.SubtitleCardItem
+        <titles.SubtitleCardItem
           subtitle={subtitle}
           place="articleCard"
         />
