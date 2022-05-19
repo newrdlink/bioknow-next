@@ -2,7 +2,7 @@ import api from '../../utils/ApiArtcles'
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 
-const Articles = ({ data }) => {
+const Articles = ({ data = {} }) => {
   // const [articles, setArticles] = useState([])
   const { data: arr } = data
   // setArticles(arr)

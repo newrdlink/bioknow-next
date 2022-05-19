@@ -2,9 +2,9 @@ import api from '../../utils/ApiArtcles'
 import ReactMarkdown from 'react-markdown'
 
 
-const ArticlePage = ({ article }) => {
+const ArticlePage = ({ article = { attributes: {} } }) => {
   const { attributes: data } = article
-  console.log(data)
+  // console.log(data)
   return (
     <section>
       <h3>{data.title}</h3>
