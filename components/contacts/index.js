@@ -5,9 +5,8 @@ import cn from 'classnames'
 
 const Contacts = () => {
   const router = useRouter()
-  // console.log(1, router.pathname)
   const isMainPage = router.pathname === '/'
-  // console.log(contacts)
+
   return (
     <div className={styles.contacts}>
       <a href={`tel:` + contacts[0].value}
