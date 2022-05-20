@@ -1,0 +1,21 @@
+$font-m: normal 400 18px /1.2 Gilroy;
+
+.articles {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto 150px;
+  padding: 0;
+  list-style: none;
+  font: $font-m;
+}
+
+.article {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto 150px;
+  font: $font-m;
+}
+
+.article__title {
+  text-transform: uppercase;
+}

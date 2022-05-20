@@ -5,6 +5,6 @@ export const contacts = [
   },
   {
     type: 'email',
-    value: 'info@bioknow.ru'
+    value: 'lisvra@mail.ru'
   },
 ]
