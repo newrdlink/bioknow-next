@@ -7,7 +7,7 @@ export default function App() {
   return (
     <main className="main">
       <HeadPage
-        title="Репититор по биологии"
+        title="Репетитор по биологии"
         description="Главная страница репетитора по биологии"
         keywords="Репетитор по биологии, подготовка к экзаменам по биологии"
       />
