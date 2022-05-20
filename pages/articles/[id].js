@@ -7,7 +7,7 @@ import Head from 'next/head'
 
 const ArticlePage = ({ articleData = { attributes: {} } }) => {
   const { attributes: data } = articleData
-  const { title, subtitle, article } = data
+  const { title = "temp", subtitle, article } = data
 
   const titlePage = title[0].toUpperCase() + title.slice(1).toLowerCase()
 
