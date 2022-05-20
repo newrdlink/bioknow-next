@@ -1,21 +1,22 @@
+import styles from './style.module.scss'
 import api from '../../utils/ApiArtcles'
-import ReactMarkdown from 'react-markdown'
-import Link from 'next/link'
+import { ArticleItem, HeadPage } from '/components'
 
 const Articles = ({ data = {} }) => {
-  // const [articles, setArticles] = useState([])
+
   const { data: arr } = data
-  // setArticles(arr)
-  // console.log(arr)
-  // console.log(arr[1].attributes.article)
 
   return (
-    <ul>
-      {arr.map((el) => <li key={el.id}><Link href={`/articles/${el.id}`}><a>{el.attributes.title}</a></Link></li>)}
+    <ul className={styles.articles}>
+      <HeadPage
+        title="Мои статьи по биологии"
+        description="Страница с авторскими статьями"
+        keywords="Статьи по биологии, подготовка к экзамену по биологии, репетитор по биологии"
+      />
+      {arr.map((el) => <ArticleItem key={el.id} {...el} />)}
     </ul>
   )
 }
-
 // it works or it is good case
 export async function getStaticProps() {
   // Fetch data from external API

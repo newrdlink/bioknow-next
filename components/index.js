@@ -17,6 +17,8 @@ import Programm from "./programm"
 import { MButton, Button } from "./button"
 import Form from "./form"
 import Contact from "./contact"
+import ArticleItem from "./articleItem"
+import HeadPage from "./headPage"
 
 export {
   Header,
@@ -39,4 +41,6 @@ export {
   MButton,
   Form,
   Contact,
+  ArticleItem,
+  HeadPage,
 }

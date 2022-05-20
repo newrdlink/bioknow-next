@@ -1,15 +1,27 @@
+import styles from './style.module.scss'
 import api from '../../utils/ApiArtcles'
 import ReactMarkdown from 'react-markdown'
+import { HeadPage } from '/components'
+import Head from 'next/head'
 
 
-const ArticlePage = ({ article = { attributes: {} } }) => {
-  const { attributes: data } = article
-  // console.log(data)
+const ArticlePage = ({ articleData = { attributes: {} } }) => {
+  const { attributes: data } = articleData
+  const { title, subtitle, article } = data
+
+  const titlePage = title[0].toUpperCase() + title.slice(1).toLowerCase()
+
   return (
-    <section>
-      <h3>{data.title}</h3>
+    <section className={styles.article}>
+      <HeadPage
+        title={titlePage}
+        description={`${subtitle}`}
+        keywords="Авторская статья по биологии"
+      />
+      <h3 className={styles.article__title}>{title}</h3>
+      <p>{subtitle}</p>
       <ReactMarkdown>
-        {data.article}
+        {article}
       </ReactMarkdown>
     </section>
 
@@ -37,5 +49,5 @@ export const getStaticPaths = async () => {
 export async function getStaticProps({ params }) {
   // Fetch data from external API
   const res = await api.getArticle(params.id)
-  return { props: { article: res.data } }
+  return { props: { articleData: res.data } }
 }

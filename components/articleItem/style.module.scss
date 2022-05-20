@@ -1,0 +1,34 @@
+.articalItem {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #000;
+  padding: 20px;
+  transition: all .15s ease-in;
+}
+
+.articalItem:hover {
+  background-color: rgba(238, 61, 27, .3);
+}
+
+.articalItem__num {
+  margin: 0;
+
+}
+
+.articalItem__title {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.articalItem:nth-of-type(1) {
+  border-top: 1px solid #000;
+}
+
+.articalItem__subtitle {
+  margin-left: 50px;
+  text-transform: lowercase;
+}
+
+.articalItem__date {
+  margin-left: 100px;
+}
