@@ -4,13 +4,14 @@ import { motion } from 'framer-motion'
 import { forwardRef } from 'react'
 
 // eslint-disable-next-line react/display-name
-export const Button = forwardRef(({ name, place, onClick, type }, ref) => (
+export const Button = forwardRef(({ name, place, onClick, type, blocked }, ref) => (
   <motion.button
     ref={ref}
     type={type}
     onClick={onClick}
     place={place}
     className={cn(styles.button, styles[place])}
+    disabled={blocked}
   >{name}</motion.button>
 ))
 

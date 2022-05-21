@@ -4,7 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { titles } from '/components'
 
-const CardArticle = ({ title = '', subtitle, mainImage = '', id }) => {
+const CardArticle = ({ title, subtitle, mainImage = '', id }) => {
+  const titleMod = title.length > 40 ? title.slice(0, 40) + '...' : title
+  const titleModify = titleMod[0].toUpperCase() + titleMod.slice(1).toLowerCase()
+  const subtitleMod = subtitle.length > 70 ? subtitle.slice(0, 70) + '...' : subtitle
+  const subtitleModify = subtitleMod[0].toUpperCase() + subtitleMod.slice(1).toLowerCase()
   // console.log(mainImage)
   // const variants = {
   //   hidden: { opacity: 0, x: -200, y: 0 },
@@ -23,11 +27,11 @@ const CardArticle = ({ title = '', subtitle, mainImage = '', id }) => {
       </div>
       <div className={styles.cardArticle__content}>
         <titles.TitleCardItem
-          title={title}
+          title={titleModify}
           place="cardArticle"
         />
         <titles.SubtitleCardItem
-          subtitle={subtitle}
+          subtitle={subtitleModify}
           place="articleCard"
         />
         <Link href={`/articles/${id}`}><a className={styles.cardArticle__link}>Читать далее...</a></Link>

@@ -22,6 +22,7 @@ $font-link-m: normal 700 12px /150% Gilroy;
 .cardArticle__content {
   position: relative;
   max-width: 293px;
+  min-height: 194px;
   background: #FFF;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -38,8 +39,10 @@ $font-link-m: normal 700 12px /150% Gilroy;
 }
 
 .cardArticle__link {
-  margin: 0;
+  position: relative;
   display: block;
+  bottom: -10px;
+  margin: 0;
   font: $font-link-m;
   color: #ED4C5C;
   text-align: center;

@@ -26,9 +26,10 @@ const Form = () => {
       <MButton
         name="отправить"
         place="contact"
-        whileHover={{ scale: .8 }}
+        // whileHover={{ scale: .8 }}
         type="submit"
         onClick={onSubmit}
+        blocked={true}
       />
     </form>
   )

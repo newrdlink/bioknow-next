@@ -1,9 +1,7 @@
 import styles from './style.module.scss'
 import api from '../../utils/ApiArtcles'
 import ReactMarkdown from 'react-markdown'
-import { HeadPage } from '/components'
-import Head from 'next/head'
-
+import { HeadPage } from 'components'
 
 const ArticlePage = ({ articleData = { attributes: {} } }) => {
   const { attributes: data } = articleData

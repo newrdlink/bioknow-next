@@ -6,6 +6,6 @@ const nextConfig = {
 module.exports = {
   nextConfig,
   images: {
-    domains: ['avatars.mds.yandex.net']
+    domains: ['avatars.mds.yandex.net', 'api.bioknow.ru']
   },
 }

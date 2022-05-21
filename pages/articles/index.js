@@ -19,11 +19,9 @@ const Articles = ({ data = {} }) => {
 }
 // it works or it is good case
 export async function getStaticProps() {
-  // Fetch data from external API
-  // const res = await fetch(`http://api.bioknow.ru/api/articles`)
+
   const res = await api.getArticles()
 
-  // Pass data to the page via props
   return { props: { data: res } }
 }
 
