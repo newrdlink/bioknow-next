@@ -2,12 +2,15 @@ import styles from './style.module.scss'
 import api from '../../utils/ApiArtcles'
 import ReactMarkdown from 'react-markdown'
 import { HeadPage } from 'components'
+import Image from 'next/image'
 
 const ArticlePage = ({ articleData = { attributes: {} } }) => {
   const { attributes: data } = articleData
-  const { title = "temp", subtitle, article } = data
+  const { title = "temp", subtitle, article, mainImage } = data
 
   const titlePage = title[0].toUpperCase() + title.slice(1).toLowerCase()
+
+  console.log(mainImage)
 
   return (
     <section className={styles.article}>
@@ -16,8 +19,20 @@ const ArticlePage = ({ articleData = { attributes: {} } }) => {
         description={`${subtitle}`}
         keywords="Авторская статья по биологии"
       />
-      <h3 className={styles.article__title}>{title}</h3>
-      <p>{subtitle}</p>
+      <div className={styles.article__content}>
+        <div className={styles.article__info}>
+          <h3 className={styles.article__title}>{title}</h3>
+          <p>{subtitle}</p>
+        </div>
+        <div className={styles.article__imageWrapper}>
+          <Image
+            src={mainImage}
+            alt={`Главная фотография статьи ${title}`}
+            width={500}
+            height={357}
+          />
+        </div>
+      </div>
       <ReactMarkdown>
         {article}
       </ReactMarkdown>

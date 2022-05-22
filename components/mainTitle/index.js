@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import styles from './style.module.scss'
-import { MButton } from "/components"
+import { MButton } from "components"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 const MainTitle = () => {

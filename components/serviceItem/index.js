@@ -1,28 +1,28 @@
 import styles from './style.module.scss'
-import { titles } from '/components'
 import Image from 'next/image'
-import cn from 'classnames'
-import { motion } from "framer-motion"
 
-const ServiceItem = ({ title, image, id, type, subtitle }) => {
+const ServiceItem = ({ id, attributes = {} }) => {
+  const { title, subtitle, image, text } = attributes
 
   return (
-    <motion.li
-      whileHover={{ scale: 1.2 }}
-      className={styles.serviceItem}>
-      <div className={cn(styles.serviceItem__wrapper, styles[type])}>
-        <Image src={image.src} alt={`Иконка ${title}`} layout='fill' />
+    <section className={styles.serviceItem} id={id}>
+      <div className={styles.serviceItem__content}>
+        <div className={styles.serviceItem__info}>
+          <h5 className={styles.serviceItem__title}>{title}</h5>
+          <p className={styles.serviceItem__subtitle}>{subtitle}</p>
+        </div>
+        <div className={styles.serviceItem__wrapper}>
+          <Image
+            src={image}
+            alt={`Фотография услуги ${title}`}
+            width={500}
+            height={357}
+            className={styles.serviceItem__image}
+          />
+        </div>
       </div>
-      <span className={styles.serviceItem__num}>{`0${id}`}</span>
-      <titles.TitleCardItem
-        title={title}
-        place='serviceItem'
-      />
-      <titles.SubtitleCardItem
-        subtitle={subtitle}
-        place="serviceCard"
-      />
-    </motion.li>
+      <article className={styles.serviceItem__text}>{text}</article>
+    </section>
   )
 }
 

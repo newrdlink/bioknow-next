@@ -1,5 +1,5 @@
 import styles from './style.module.scss'
-import { titles, ServiceItem } from '/components'
+import { titles, CardService } from 'components'
 import { services } from '../../constants/services'
 
 const Services = () => {
@@ -11,7 +11,7 @@ const Services = () => {
         place="services" />
       <ul className={styles.services__items}>
         {
-          services.map((el) => <ServiceItem key={el.id} {...el} />)
+          services.map((el) => <CardService key={el.id} {...el} />)
         }
       </ul>
     </section>

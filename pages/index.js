@@ -2,17 +2,14 @@ import styles from '../styles/variables.module.scss'
 import { Main, MainTitle, Overlay, HeadPage } from 'components'
 import Script from 'next/script'
 import api from '../utils/ApiArtcles'
+import { metaInfo } from 'constants/metaInfo'
 
 
 const App = ({ articlesApi = [] }) => {
   // console.log(articlesApi)
   return (
     <main className="main">
-      <HeadPage
-        title="Репетитор по биологии"
-        description="Главная страница репетитора по биологии"
-        keywords="Репетитор по биологии, подготовка к экзаменам по биологии"
-      />
+      <HeadPage {...metaInfo.find(el => el.page === 'main')} />
       <Script src="/index.js" type='text/javascript' />
       <Overlay />
       <MainTitle />

@@ -17,5 +17,19 @@ $font-m: normal 400 18px /1.2 Gilroy;
 }
 
 .article__title {
+  margin: 0;
   text-transform: uppercase;
+}
+
+.article__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__info {
+  margin: 0 20px 0 0;
+}
+
+.article__imageWrapper {
+  position: relative;
 }

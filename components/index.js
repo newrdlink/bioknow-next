@@ -12,13 +12,14 @@ import MainTitle from "./mainTitle"
 import Promo from "./promo"
 import Services from "./services"
 import titles from "./titles"
-import ServiceItem from "./serviceItem"
+import CardService from "./cardService"
 import Programm from "./programm"
 import { MButton, Button } from "./button"
 import Form from "./form"
 import Contact from "./contact"
 import ArticleItem from "./articleItem"
 import HeadPage from "./headPage"
+import ServiceItem from "./serviceItem"
 
 export {
   Header,
@@ -35,7 +36,7 @@ export {
   Promo,
   Services,
   titles,
-  ServiceItem,
+  CardService,
   Programm,
   Button,
   MButton,
@@ -43,4 +44,5 @@ export {
   Contact,
   ArticleItem,
   HeadPage,
+  ServiceItem,
 }

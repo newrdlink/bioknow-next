@@ -1,46 +1,34 @@
+$font-title-m: normal 700 22px /150% Gilroy;
+$font-subtitle-m: normal 700 18px /100% Gilroy;
+$font-text-m: normal 400 16px /150% Gilroy;
+
 .serviceItem {
   width: 100%;
-  max-width: 255px;
-  position: relative;
-  margin: 0 auto;
-  padding: 20px 0;
+  max-width: 1110px;
+  margin: 0 0 100px 0;
 }
 
-.serviceItem:hover {
-  cursor: pointer;
+.serviceItem__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.serviceItem__title {
+  font: $font-title-m;
+  margin: 0 0 50px 0;
+}
+
+.serviceItem__subtitle {
+  font: $font-subtitle-m;
+  margin: 0;
 }
 
 .serviceItem__wrapper {
-  position: relative;
+  margin: 0 0 50px 0;
   width: 100%;
-  height: 100%;
-  min-height: 66px;
-  max-width: 50px;
-  margin: 20px auto 0;
+  max-width: 500px;
 }
 
-.one {
-  max-width: 60px;
-}
-
-.two {
-  max-width: 80px;
-}
-
-.four {
-  max-width: 60px;
-}
-
-.serviceItem__num {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 120px;
-  text-align: center;
-  color: rgba(16, 16, 16, 0.08);
+.serviceItem__text {
+  font: $font-text-m;
 }
