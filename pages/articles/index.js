@@ -2,9 +2,7 @@ import styles from './style.module.scss'
 import api from '../../utils/ApiArtcles'
 import { ArticleItem, HeadPage, titles } from 'components'
 
-const Articles = ({ data }) => {
-
-  const { data: arr } = data
+const Articles = ({ articles = [] }) => {
   // console.log(arr[0].id)
   return (
     <section className={styles.articles}>
@@ -18,17 +16,17 @@ const Articles = ({ data }) => {
           description="Страница с авторскими статьями"
           keywords="Статьи по биологии, подготовка к экзамену по биологии, репетитор по биологии"
         />
-        {arr.map((el) => <ArticleItem key={el.id} {...el} />)}
+        {articles.map((el) => <ArticleItem key={el.id} {...el} />)}
       </ul>
     </section>
   )
 }
 // it works or it is good case
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
   const res = await api.getArticles()
 
-  return { props: { data: res } }
+  return { props: { articles: res.data } }
 }
 
 export default Articles
