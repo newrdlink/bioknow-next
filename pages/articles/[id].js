@@ -9,9 +9,7 @@ const ArticlePage = ({ articleData = { attributes: {} } }) => {
   const { title = "temp", subtitle, article, mainImage } = data
 
   const titlePage = title[0].toUpperCase() + title.slice(1).toLowerCase()
-
-  console.log(mainImage)
-
+  // console.log(mainImage)
   return (
     <section className={styles.article}>
       <HeadPage
