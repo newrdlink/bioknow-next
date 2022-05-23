@@ -16,8 +16,8 @@ const Articles = ({ articles = [] }) => {
           description="Страница с авторскими статьями"
           keywords="Статьи по биологии, подготовка к экзамену по биологии, репетитор по биологии"
         />
-        {/* {articles.map((el) => <ArticleItem key={el.id} {...el} />)} */}
-        {articles.map((el) => <p key={el.id} {...el}>{el.id}</p>)}
+        {articles.map((el) => <ArticleItem key={el.id} {...el} />)}
+        {/* {articles.map((el) => <p key={el.id} {...el}>{el.id}</p>)} */}
       </ul>
     </section>
   )
