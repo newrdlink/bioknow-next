@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-const HeadPage = ({ title, linkFavicon = "/favicon.ico", description, keywords }) => {
+const HeadPage = ({ title, linkFavicon = "https://bioknow.ru/favicon.ico", description, keywords }) => {
 
   return (
     <Head>
