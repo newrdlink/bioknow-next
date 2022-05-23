@@ -4,7 +4,7 @@ import Link from 'next/link'
 const ArticleItem = ({ id, attributes }) => {
   const { title, subtitle, createdAt, mainImage } = attributes
 
-  const date = new Date(createdAt)
+  //  const date = new Date(createdAt)
   //console.log(mainImage)
 
   return (
@@ -24,7 +24,9 @@ const ArticleItem = ({ id, attributes }) => {
       <p className={styles.articalItem__num}>{id}</p>
       <Link href={`/articles/${id}`}><a className={styles.articalItem__title}>{title}</a></Link>
       <p className={styles.articalItem__subtitle}>{subtitle}</p>
-      <p className={styles.articalItem__date}>{`${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}`}</p>
+      <p className={styles.articalItem__date}>
+        {/* {`${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}`} */}1
+      </p>
     </li>
   )
 }
