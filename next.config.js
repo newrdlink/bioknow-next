@@ -8,4 +8,8 @@ module.exports = {
   images: {
     domains: ['avatars.mds.yandex.net', 'api.bioknow.ru']
   },
+  compiler: {
+    // ssr and displayName are configured by default
+    styledComponents: true,
+  },
 }
