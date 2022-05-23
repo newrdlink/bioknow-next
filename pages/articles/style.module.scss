@@ -5,6 +5,10 @@ $font-m: normal 400 18px /1.2 Gilroy;
   max-width: 1110px;
   margin: 0 auto 150px;
   padding: 0;
+}
+
+.articles__items {
+  padding: 0;
   list-style: none;
   font: $font-m;
 }
