@@ -3,12 +3,10 @@ import Link from 'next/link'
 
 const ArticleItem = ({ id, attributes }) => {
   const { title, subtitle, createdAt, mainImage } = attributes
-
-  const date = new Date(createdAt)
   // console.log(createdAt)
-  const month = date.getMonth()
-  const day = date.getDate()
-  const year = date.getFullYear()
+  const month = createdAt.slice(5, 7)
+  const day = createdAt.slice(8, 10)
+  const year = createdAt.slice(0, 4)
 
   return (
     <li key={id} className={styles.articalItem}
