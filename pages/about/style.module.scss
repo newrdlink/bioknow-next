@@ -1,0 +1,11 @@
+$font-subtitle-m: normal 400 18px /150% Gilroy;
+
+.about {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto 150px;
+}
+
+.about__subtitle {
+  font: $font-subtitle-m;
+}
