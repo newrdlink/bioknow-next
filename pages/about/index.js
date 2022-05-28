@@ -1,16 +1,15 @@
 import styles from './style.module.scss'
 import { aboutInfo } from "constants/about"
-import { titles } from 'components'
+import { titles, HeadPage } from 'components'
+import { metaInfo } from 'constants/metaInfo'
 
 const About = () => {
 
   const arr = aboutInfo.subtitle.split('    ')
-  console.log(arr)
-
-
 
   return (
     <section className={styles.about}>
+      <HeadPage {...metaInfo.find(el => el.page === 'about')} />
       <titles.TitleBlock
         title={aboutInfo.title}
         place="about"
