@@ -1,0 +1,21 @@
+.circleIndicator {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  z-index: 100;
+}
+
+.progressIcon {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
+  height: 1px;
+}
+
+.progressIcon__line {
+  width: 100%;
+  height: 1px;
+  stroke: rgb(4, 129, 129);
+}

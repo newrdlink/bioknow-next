@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import styles from '../styles/variables.module.scss'
-import { Header, Footer } from '../components'
+import { Header, Footer, CircleIndicator } from 'components'
 
 function MyApp({ Component, pageProps }) {
   // console.log(styles)
@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     // initinal variables in scss
     // style={{ backgroundColor: styles.primary }}
     >
+      <CircleIndicator />
       <Header />
       <Component {...pageProps} {...styles.primary} />
       <Footer />
