@@ -20,6 +20,8 @@ import Contact from "./contact"
 import ArticleItem from "./articleItem"
 import HeadPage from "./headPage"
 import ServiceItem from "./serviceItem"
+import { CircleIndicator } from "./animations/scrollBar"
+import ProgramItem from "./programItem"
 
 export {
   Header,
@@ -45,4 +47,6 @@ export {
   ArticleItem,
   HeadPage,
   ServiceItem,
+  CircleIndicator,
+  ProgramItem,
 }

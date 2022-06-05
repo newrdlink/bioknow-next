@@ -1,0 +1,27 @@
+$font-title-m: normal 700 20px /100% Gilroy;
+$font-text-m: normal 400 18px /150% Gilroy;
+$font-caption-m: normal 400 14px /150% Gilroy;
+
+.programItem {
+  width: 100%;
+  margin: 0 auto 150px;
+}
+
+.programItem__wrapper {
+  max-width: 720px;
+  margin: 40px auto;
+}
+
+.programItem__caption {
+  margin: 0;
+  font: $font-caption-m;
+}
+
+.programItem__text {
+  // margin: 0;
+  font: $font-text-m;
+}
+
+.programItem__title {
+  font: $font-title-m;
+}
