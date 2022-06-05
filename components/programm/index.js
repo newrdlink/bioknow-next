@@ -12,11 +12,11 @@ const Programm = () => {
     <section className={styles.programm}>
       <div className={styles.programm__content}>
         <titles.TitleBlock
-          title="Stay focused on saving money"
-          place="programm"
+          title="Программы по обучению предмета"
+          place="programmMain"
         />
         <titles.SubtitleBlock
-          subtitle="It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!"
+          subtitle="Содержание основных разделов для изучения предмета и подготовки к экзаменам для поступления в ВУЗы, сдачи эказменов, подготовки к олимпиадам"
           place="programm"
         />
         <MButton
