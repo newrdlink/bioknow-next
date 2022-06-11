@@ -1,5 +1,5 @@
 $font-title-m: normal 700 22px /150% Gilroy;
-$font-subtitle-m: normal 700 18px /100% Gilroy;
+$font-subtitle-m: normal 400 18px /130% Gilroy;
 $font-text-m: normal 400 16px /150% Gilroy;
 
 .serviceItem {
@@ -21,6 +21,7 @@ $font-text-m: normal 400 16px /150% Gilroy;
 .serviceItem__subtitle {
   font: $font-subtitle-m;
   margin: 0;
+  max-width: 500px;
 }
 
 .serviceItem__wrapper {
