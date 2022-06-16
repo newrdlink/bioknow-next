@@ -17,3 +17,10 @@ $font-title-m: normal 700 36px /43px Gilroy;
   margin: 0;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 450px){
+  .topArticles__items {
+    flex-direction: column;
+    align-items: center;
+  }
+}

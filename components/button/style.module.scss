@@ -30,3 +30,11 @@ $font-button-m: normal 700 14px /17px Gilroy;
   color: #FFF;
   margin: 25px 0 0 0;
 }
+
+@media screen and (max-width: 450px){
+  .mainTitle {
+    color: #ED4C5C;
+    background: #FFF;
+    margin: 0 0 100px 0;
+  }
+}

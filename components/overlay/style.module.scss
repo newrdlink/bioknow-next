@@ -6,6 +6,16 @@
   z-index: -1;
 }
 
+
+
+.overlay__imageWrapper {
+
+}
+
+.overlay__image {
+
+}
+
 .overlay::after {
   position: absolute;
   left: 0;
@@ -14,4 +24,18 @@
   height: 99.4%;
   content: "";
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+}
+
+@media screen and (max-width: 450px){
+  .overlay {
+    // height: 100%;
+  }
+
+  .overlay__image {
+    // width: 100%;
+    // min-width: 100%;
+    // min-height: 100%;
+    // max-height: 100%;
+    object-fit: cover;
+  }
 }

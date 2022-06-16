@@ -13,3 +13,12 @@ $font-m: normal 400 26px /1.2 Gilroy;
   justify-content: space-between;
   margin: 0 0 100px 0;
 }
+
+@media screen and (max-width: 450px){
+  .header {   
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    font: $font-m;
+    margin: 0 0 70px 0;
+  }
+}

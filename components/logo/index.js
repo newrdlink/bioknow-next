@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import styles from './style.module.css'
+import styles from './style.module.scss'
 import Image from 'next/image'
 import logo from '../../images/logo2.svg'
 import { useRouter } from 'next/router'
@@ -17,7 +17,11 @@ const Logo = () => {
       // transition={{ duration: 2, delay: 2 }}
       // whileHover={{ scale: 1.2 }}
       className={styles.logo} onClick={() => history.push('/')}>
-      <Image src={logo} alt="Логотип" />
+      <Image 
+      src={logo} 
+      alt="Логотип" 
+      className={styles.logo__image}
+      />
     </motion.div>
   )
 }

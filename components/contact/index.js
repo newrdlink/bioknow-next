@@ -1,5 +1,5 @@
 import styles from './style.module.scss'
-import { titles, Form } from '/components'
+import { titles, Form } from 'components'
 
 const Contact = () => {
   return (

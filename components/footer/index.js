@@ -1,5 +1,5 @@
 import styles from './style.module.scss'
-import { Logo } from '/components'
+import { Logo } from 'components'
 
 const Footer = () => {
   // console.log(router.asPath)

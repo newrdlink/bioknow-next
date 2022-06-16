@@ -61,3 +61,9 @@ $font-title-m: normal 700 36px /43px Gilroy;
   text-align: start;
   color: #fff;
 }
+
+@media screen and (max-width: 450px){
+  .promo {
+    margin: 20px 0 24px 0;
+  }
+}

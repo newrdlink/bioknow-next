@@ -9,3 +9,10 @@
 .contact__content {
   max-width: 445px;
 }
+
+@media screen and (max-width: 450px){
+  .contact {
+    padding: 120px 20px 100px;
+    flex-direction: column;
+  }
+}

@@ -1,3 +1,5 @@
+$font-m: normal 400 26px /1.2 Gilroy;
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,8 @@
 
 .contacts__item {
   text-decoration: none;
+  font: $font-m;
+  // font-size: 20px;
 }
 
 .contacts__item_place_npMain {

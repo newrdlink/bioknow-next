@@ -37,3 +37,22 @@
   top: 25px;
   opacity: .7;
 }
+
+@media screen and (max-width: 450px){
+  .programm {
+    padding: 95px 20px;
+    flex-direction: column;
+  }
+
+  .programm__wrapper {
+    margin-top: 40px;
+  }
+
+  .programm__wrapper_pos_one {
+    display: none;
+  }
+
+  .programm__wrapper_pos_two {
+    display: none;
+  }  
+}
