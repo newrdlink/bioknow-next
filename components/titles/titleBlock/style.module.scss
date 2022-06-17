@@ -1,4 +1,5 @@
 $font-title-m: normal 700 36px /43px Gilroy;
+$font-title-mm: normal 700 44px /43px Gilroy;
 
 .title {
   font: $font-title-m;
@@ -62,8 +63,23 @@ $font-title-m: normal 700 36px /43px Gilroy;
   color: #fff;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .promo {
     margin: 20px 0 24px 0;
+  }
+
+  .services {
+    margin: 0 0 50px 0;
+  }
+
+  .contact {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .programmMain {
+    margin: 0 0 20px 0;
+    text-align: center;
+
   }
 }

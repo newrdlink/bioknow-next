@@ -1,4 +1,5 @@
 $font-subtitle-m: normal 400 18px /150% Gilroy;
+$font-link-m: normal 400 14px /140% Gilroy;
 
 .about {
   width: 100%;
@@ -8,4 +9,19 @@ $font-subtitle-m: normal 400 18px /150% Gilroy;
 
 .about__subtitle {
   font: $font-subtitle-m;
+}
+
+.about__linkMob {
+  display: block;
+  font: $font-link-m;
+  color: #ED4C5C;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    padding: 12px;
+    margin: 0 auto;
+  }
 }

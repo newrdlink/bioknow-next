@@ -38,9 +38,9 @@
   opacity: .7;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .programm {
-    padding: 95px 20px;
+    padding: 40px 20px;
     flex-direction: column;
   }
 
@@ -54,5 +54,5 @@
 
   .programm__wrapper_pos_two {
     display: none;
-  }  
+  }
 }

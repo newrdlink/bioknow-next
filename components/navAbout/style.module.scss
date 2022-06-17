@@ -1,0 +1,9 @@
+$font-m: normal 400 26px /1.2 Gilroy;
+
+.navAbout {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font: $font-m;
+}

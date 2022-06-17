@@ -22,6 +22,7 @@ import HeadPage from "./headPage"
 import ServiceItem from "./serviceItem"
 import { CircleIndicator } from "./animations/scrollBar"
 import ProgramItem from "./programItem"
+import NavAbout from "./navAbout"
 
 export {
   Header,
@@ -49,4 +50,5 @@ export {
   ServiceItem,
   CircleIndicator,
   ProgramItem,
+  NavAbout,
 }

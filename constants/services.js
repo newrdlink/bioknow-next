@@ -22,7 +22,7 @@ export const services = [
     id: 3,
     title: "Индивидуальные занятия",
     subtitle: "курс подготовки по индивидуальным темам",
-    type: "tree",
+    type: "three",
     image: img3,
   },
   {

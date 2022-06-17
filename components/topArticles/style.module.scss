@@ -19,6 +19,11 @@ $font-title-m: normal 700 36px /43px Gilroy;
 }
 
 @media screen and (max-width: 450px){
+
+  .topArticles {
+    padding: 63px 0 20px;
+  }
+
   .topArticles__items {
     flex-direction: column;
     align-items: center;

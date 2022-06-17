@@ -5,16 +5,18 @@ import NavItem from '../navItem'
 const Nav = () => {
 
   return (
-    <ul className={styles.nav}>
-      {
-        items.map(el =>
-          <NavItem
-            key={el.name}
-            name={el.name}
-            path={el.path}
-          />)
-      }
-    </ul>
+    <nav>
+      <ul className={styles.nav}>
+        {
+          items.map(el =>
+            <NavItem
+              key={el.name}
+              name={el.name}
+              path={el.path}
+            />)
+        }
+      </ul>
+    </nav>
   )
 }
 

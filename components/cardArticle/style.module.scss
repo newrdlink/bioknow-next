@@ -48,3 +48,10 @@ $font-link-m: normal 700 12px /150% Gilroy;
   text-align: center;
   text-decoration: none;
 }
+
+@media screen and (max-width: 450px){
+  .cardArticle {
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+}

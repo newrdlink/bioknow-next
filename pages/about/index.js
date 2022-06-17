@@ -1,7 +1,9 @@
 import styles from './style.module.scss'
+import Link from 'next/link'
 import { aboutInfo } from "constants/about"
-import { titles, HeadPage } from 'components'
+import { titles, HeadPage, NavAbout } from 'components'
 import { metaInfo } from 'constants/metaInfo'
+import { WidthScreen } from 'utils/widthScreen'
 
 const About = () => {
 
@@ -15,7 +17,7 @@ const About = () => {
         place="about"
       />
       {arr.map((el) => <p className={styles.about__subtitle} key={el}>{el}</p>)}
-
+      {WidthScreen().width < 450 && <NavAbout />}
     </section>
   )
 }
