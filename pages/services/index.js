@@ -1,9 +1,10 @@
 import styles from './style.module.scss'
-import { HeadPage, titles, ServiceItem } from 'components'
+import { HeadPage, titles, ServiceItem, SingleLink } from 'components'
 import api from 'utils/ApiServices'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { metaInfo } from 'constants/metaInfo'
+import { WidthScreen } from 'utils/widthScreen'
 
 const Services = ({ services }) => {
   const router = useRouter()
@@ -25,6 +26,12 @@ const Services = ({ services }) => {
           place="services"
         />
         {services.map((el) => <ServiceItem key={el.id} {...el} id={el.id} />)}
+        {WidthScreen().width < 450 &&
+          <SingleLink
+            href="/"
+            name="На главную"
+            place="services"
+          />}
       </section>
     </div>
 

@@ -25,15 +25,10 @@ $font-link-m: normal 400 14px /140% Gilroy;
   max-width: 445px;
 }
 
-.promo__link {
-  font: $font-link-m;
-  color: #ED4C5C;
-}
-
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .promo {
-   padding: 20px 20px;
-   flex-direction: column;
+    padding: 20px 20px;
+    flex-direction: column;
   }
 
   .promo__content {

@@ -33,3 +33,32 @@ $font-text-m: normal 400 16px /150% Gilroy;
 .serviceItem__text {
   font: $font-text-m;
 }
+
+@media screen and (max-width: 450px) {
+
+  .serviceItem:last-of-type {
+    margin: 0 0 50px 0;
+  }
+
+  .serviceItem__content {
+    flex-direction: column;
+  }
+
+  .serviceItem__title {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .serviceItem__subtitle {
+    margin: 0 0 20px 0;
+    text-align: justify;
+  }
+
+  .serviceItem__wrapper {
+    margin: 0 0 20px 0;
+  }
+
+  .serviceItem__text {
+    text-align: justify;
+  }
+}

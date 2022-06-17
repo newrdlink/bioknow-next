@@ -23,6 +23,7 @@ import ServiceItem from "./serviceItem"
 import { CircleIndicator } from "./animations/scrollBar"
 import ProgramItem from "./programItem"
 import NavAbout from "./navAbout"
+import SingleLink from "./singleLink"
 
 export {
   Header,
@@ -51,4 +52,5 @@ export {
   CircleIndicator,
   ProgramItem,
   NavAbout,
+  SingleLink,
 }
