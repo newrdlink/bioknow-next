@@ -1,6 +1,6 @@
 import styles from '../styles/variables.module.scss'
 import { Main, MainTitle, Overlay, HeadPage } from 'components'
-import Script from 'next/script'
+// import Script from 'next/script'
 import api from '../utils/ApiArtcles'
 import { metaInfo } from 'constants/metaInfo'
 
@@ -10,7 +10,7 @@ const App = ({ articlesApi = [] }) => {
   return (
     <main className="main">
       <HeadPage {...metaInfo.find(el => el.page === 'main')} />
-      <Script src="/index.js" type='text/javascript' />
+      {/* <Script src="/index.js" type='text/javascript' /> */}
       <Overlay />
       <MainTitle />
       <Main
