@@ -1,0 +1,35 @@
+$font-span-m: normal 400 18px /19px Gilroy;
+$font-spanActive-m: normal 400 14px /19px Gilroy;
+
+.label {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 60px;
+  margin: 0 0 20px 0;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding-left: 25px;
+}
+
+.span {
+  position: absolute;
+  font: $font-span-m;
+  color: #706e6e;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .2s ease;
+}
+
+.span_active {
+  top: -10px;
+  left: 20px;
+  font: $font-spanActive-m;
+}
+
+.span_error {
+  color: #ED4C5C;
+}

@@ -28,10 +28,18 @@ $font-button-m: normal 700 14px /17px Gilroy;
 .contact {
   background: #ED4C5C;
   color: #FFF;
-  margin: 25px 0 0 0;
+  margin: 0;
 }
 
-@media screen and (max-width: 450px){
+.button_blocked {
+  background: #706e6f;
+}
+
+.button_blocked:hover {
+  cursor: default;
+}
+
+@media screen and (max-width: 450px) {
   .mainTitle {
     color: #ED4C5C;
     background: #FFF;

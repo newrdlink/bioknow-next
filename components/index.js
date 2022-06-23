@@ -24,6 +24,7 @@ import { CircleIndicator } from "./animations/scrollBar"
 import ProgramItem from "./programItem"
 import NavAbout from "./navAbout"
 import SingleLink from "./singleLink"
+import InputBackForm from "./inputBackForm"
 
 export {
   Header,
@@ -53,4 +54,5 @@ export {
   ProgramItem,
   NavAbout,
   SingleLink,
+  InputBackForm,
 }

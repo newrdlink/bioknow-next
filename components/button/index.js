@@ -10,7 +10,7 @@ export const Button = forwardRef(({ name, place, onClick, type, blocked }, ref) 
     type={type}
     onClick={onClick}
     place={place}
-    className={cn(styles.button, styles[place])}
+    className={cn(styles.button, styles[place], { [styles.button_blocked]: blocked })}
     disabled={blocked}
   >{name}</motion.button>
 ))
