@@ -1,5 +1,6 @@
 import styles from './style.module.scss'
 import { titles, Form } from 'components'
+import { info } from 'constants/formData'
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
           place="contact"
         />
         <titles.SubtitleBlock
-          subtitle="Возникли вопросы и нет возможности позвонить или написать? Заполните форму для обратной связи"
+          subtitle={info.subtitle}
           place="contact"
         />
       </div>
