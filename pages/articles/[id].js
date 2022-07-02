@@ -5,11 +5,13 @@ import { HeadPage } from 'components'
 import Image from 'next/image'
 
 const ArticlePage = ({ articleData = { attributes: {} } }) => {
+
   const { attributes: data } = articleData
-  const { title = "temp", subtitle, article, mainImage } = data
+
+  const { title = "temp", subtitle, article, mainImage = "https://api.bioknow.ru/uploads/zaglushka_86c456634d.jpg?updated_at=2022-07-02T18:08:57.736Z" } = data
 
   const titlePage = title[0].toUpperCase() + title.slice(1).toLowerCase()
-  // console.log(mainImage)
+
   return (
     <section className={styles.article}>
       <HeadPage
@@ -53,7 +55,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: true
+    fallback: false
   };
 }
 
