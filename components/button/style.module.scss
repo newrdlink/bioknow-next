@@ -39,10 +39,22 @@ $font-button-m: normal 700 14px /17px Gilroy;
   cursor: default;
 }
 
+@media screen and (max-width: 1150px) {
+  .mainTitle {
+    margin: 0 0 50px 0;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .mainTitle {
     color: #ED4C5C;
     background: #FFF;
     margin: 0 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mainTitle {
+    margin: 0 0 58px 0;
   }
 }

@@ -38,6 +38,24 @@
   opacity: .7;
 }
 
+@media screen and (max-width: 1150px) {
+  .programm {
+    padding: 70px 100px;
+  }
+
+  // .programm__wrapper {
+  //   margin-top: 40px;
+  // }
+
+  // .programm__wrapper_pos_one {
+  //   display: none;
+  // }
+
+  // .programm__wrapper_pos_two {
+  //   display: none;
+  // }
+}
+
 @media screen and (max-width: 450px) {
   .programm {
     padding: 40px 20px;
@@ -54,5 +72,11 @@
 
   .programm__wrapper_pos_two {
     display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .programm {
+    padding: 30px 12px;
   }
 }

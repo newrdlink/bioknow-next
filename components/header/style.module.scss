@@ -14,11 +14,25 @@ $font-m: normal 400 26px /1.2 Gilroy;
   margin: 0 0 100px 0;
 }
 
-@media screen and (max-width: 450px){
-  .header {   
+@media screen and (max-width: 1150px) {
+  .header {
+    padding: 20px 100px 0 100px;
+    margin: 0 0 40px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
     padding: 20px 20px 0 20px;
     width: 100%;
     font: $font-m;
     margin: 0 0 70px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header {
+    padding: 12px 12px 0 12px;
+    margin: 0 0 50px 0;
   }
 }

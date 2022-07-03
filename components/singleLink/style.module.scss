@@ -9,3 +9,10 @@ $font-link-m: normal 400 14px /140% Gilroy;
   display: block;
   text-align: center;
 }
+
+@media screen and (max-width: 380px) {
+  .mainPage {
+    position: relative;
+    left: 40%;
+  }
+}

@@ -13,3 +13,11 @@ $font-subtitle-m: normal 400 14px /140% Gilroy;
 .programm {
   color: #fff;
 }
+
+
+@media screen and (max-width: 1150px) {
+  .programm {
+    max-width: 420px;
+  }
+
+}

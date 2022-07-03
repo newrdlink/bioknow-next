@@ -13,6 +13,12 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1150px) {
+  .services {
+    padding: 60px 100px 140px 100px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .services {
     padding: 60px 20px 20px 20px;

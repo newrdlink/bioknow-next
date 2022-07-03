@@ -10,9 +10,25 @@
   max-width: 445px;
 }
 
+@media screen and (max-width: 1150px) {
+  .contact {
+    padding: 120px 100px 100px;
+  }
+
+  .contact__content {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .contact {
     padding: 40px 20px 60px;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact {
+    padding: 30px 12px 50px;
   }
 }

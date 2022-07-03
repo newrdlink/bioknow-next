@@ -30,12 +30,22 @@ $font-button-m: normal 700 14px /17px Gilroy;
 }
 
 
-@media screen and (max-width: 450px){
-  .mainTitle__title {    
-    font: $font-title-mm;    
+@media screen and (max-width: 450px) {
+  .mainTitle__title {
+    font: $font-title-mm;
   }
 
-  .mainTitle__subtitle {    
+  .mainTitle__subtitle {
     font: $font-subtitle-mm;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mainTitle__title {
+    margin: 0 0 20px 0;
+  }
+
+  .mainTitle__subtitle {
+    margin: 0 0 25px 0;
   }
 }
