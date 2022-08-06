@@ -1,17 +1,12 @@
-.logo {
+.logo {}
 
-}
-
-.logo__image {
-
-
-}
+.logo__image {}
 
 .logo:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px) {
   .logo {
     max-width: 160px;
   }

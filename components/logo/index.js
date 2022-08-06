@@ -17,10 +17,11 @@ const Logo = () => {
       // transition={{ duration: 2, delay: 2 }}
       // whileHover={{ scale: 1.2 }}
       className={styles.logo} onClick={() => history.push('/')}>
-      <Image 
-      src={logo} 
-      alt="Логотип" 
-      className={styles.logo__image}
+      <Image
+        src={logo}
+        alt="Логотип"
+        className={styles.logo__image}
+        width={200}
       />
     </motion.div>
   )

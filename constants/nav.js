@@ -19,4 +19,8 @@ export const items = [
     name: 'программы',
     path: '/programms'
   },
+  {
+    name: 'тестовые задачи',
+    path: '/tasks'
+  },
 ]

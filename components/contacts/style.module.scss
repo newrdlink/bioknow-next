@@ -1,4 +1,4 @@
-$font-m: normal 400 26px /1.2 Gilroy;
+$font-m: normal 400 22px /1.2 Gilroy;
 
 .contacts {
   display: flex;
@@ -7,13 +7,41 @@ $font-m: normal 400 26px /1.2 Gilroy;
 }
 
 .contacts__item {
+  position: relative;
   text-decoration: none;
   font: $font-m;
   // font-size: 20px;
 }
 
+// .contacts__icon {
+//   width: 18px;
+//   height: 18px;
+// }
+
+// .contacts__item_type_phone::before {
+//   position: absolute;
+//   width: 18px;
+//   height: 18px;
+//   left: -30px;
+//   top: 7px;
+//   content: "";
+//   background-image: url(../../images/phone__white.svg);
+//   background-repeat: no-repeat;
+// }
+
+// .contacts__item_type_mail::before {
+//   position: absolute;
+//   width: 18px;
+//   height: 18px;
+//   left: -43px;
+//   top: 6px;
+//   content: "";
+//   background-image: url(../../images/mail.svg);
+//   background-repeat: no-repeat;
+// }
+
 .contacts__item_place_npMain {
   color: #ED4C5C;
 }
 
-@media screen and (max-width: 450px) {}
+@media screen and (max-width: 500px) {}

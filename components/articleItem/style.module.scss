@@ -15,6 +15,17 @@
 
 }
 
+.articalItem__about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.articalItem__add {
+  font-size: 14px;
+  font-style: italic;
+  margin-right: 12px;
+}
+
 .articalItem__title {
   text-transform: uppercase;
   text-decoration: none;
@@ -30,5 +41,12 @@
 }
 
 .articalItem__date {
-  margin-left: 100px;
+  margin: 0;
+}
+
+.articalItem__link {
+  display: block;
+  color: #ED4C5C;
+  text-decoration: none;
+  text-align: center;
 }

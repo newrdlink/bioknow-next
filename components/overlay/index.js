@@ -9,11 +9,11 @@ const Overlay = () => {
   return (
     <section className={styles.overlay}>
       <div className={styles.overlay__imageWrapper}>
-      <Image 
-        src={WidthScreen().width > 450 ? mainImage : mainImageMob} 
-        alt="Главная фотография" 
-        className={styles.overlay__image}
-      />
+        <Image
+          src={WidthScreen().width > 500 ? mainImage : mainImageMob}
+          alt="Главная фотография"
+          className={styles.overlay__image}
+        />
       </div>
     </section>
   )

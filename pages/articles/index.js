@@ -13,7 +13,7 @@ const Articles = ({ articles = [] }) => {
         place="articles"
       />
       <ul className={styles.articles__items}>
-        {articles.map((el) => <ArticleItem key={el.id} {...el} />)}
+        {articles.map((el) => <ArticleItem key={el.id} {...el} place="articles" />)}
       </ul>
     </section>
   )

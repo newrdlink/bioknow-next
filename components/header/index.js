@@ -8,8 +8,11 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Logo />
-      {WidthScreen().width > 450 && <Nav />}
-      <Contacts />
+      <div className={styles.header__content}>
+        {WidthScreen().width > 500 && <Nav />}
+        <Contacts />
+      </div>
+
     </header>
   )
 }

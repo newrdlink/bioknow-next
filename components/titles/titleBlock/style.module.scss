@@ -63,6 +63,12 @@ $font-title-mm: normal 700 44px /43px Gilroy;
   color: #fff;
 }
 
+.tasks {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
 @media screen and (max-width: 1150px) {
   // .promo {
   //   margin: 20px 0 24px 0;
@@ -84,7 +90,7 @@ $font-title-mm: normal 700 44px /43px Gilroy;
   // }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .promo {
     margin: 20px 0 24px 0;
   }

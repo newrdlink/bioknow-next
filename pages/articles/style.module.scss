@@ -37,3 +37,27 @@ $font-m: normal 400 18px /1.2 Gilroy;
 .article__imageWrapper {
   position: relative;
 }
+
+.article__wrapper {}
+
+@media screen and (max-width: 1150px) {
+  .article__content {
+    padding: 0 100px;
+  }
+
+  .article__wrapper {
+    padding: 0 100px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .article__content {
+    padding: 0 12px;
+    flex-direction: column;
+  }
+
+  .article__wrapper {
+    padding: 0 12px;
+  }
+}

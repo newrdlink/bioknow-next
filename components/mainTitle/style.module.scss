@@ -1,8 +1,9 @@
-$font-title-m: normal 700 72px /86px Gilroy;
 $font-title-mm: normal 700 50px /60px Gilroy;
 $font-subtitle-m: normal 700 24px /150% Gilroy;
 $font-subtitle-mm: normal 700 22px /150% Gilroy;
 $font-button-m: normal 700 14px /17px Gilroy;
+
+@import '/styles/variables.module';
 
 .mainTitle {
   width: 100%;
@@ -30,7 +31,7 @@ $font-button-m: normal 700 14px /17px Gilroy;
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .mainTitle__title {
     font: $font-title-mm;
   }

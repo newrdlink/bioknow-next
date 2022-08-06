@@ -1,7 +1,8 @@
 import styles from './style.module.scss'
+import createdTime from 'helpers/createdTime'
 import Link from 'next/link'
 
-const ArticleItem = ({ id, attributes }) => {
+const ArticleItem = ({ id, attributes, place }) => {
   const { title, subtitle, createdAt, mainImage } = attributes
 
   return (
@@ -18,12 +19,18 @@ const ArticleItem = ({ id, attributes }) => {
         // opacity: '.4'
       }}
     >
-      <p className={styles.articalItem__num}>{id}</p>
-      <Link href={`/articles/${id}`}><a className={styles.articalItem__title}>{title}</a></Link>
+      <div className={styles.articalItem__about}>
+        <p className={styles.articalItem__num}>{id}</p>
+        <p className={styles.articalItem__date}>
+          <span className={styles.articalItem__add}>{"Добавлено:"}</span>
+          {createdTime(createdAt)}
+        </p>
+      </div>
+
+      <h6 className={styles.articalItem__title}>{title}</h6>
       <p className={styles.articalItem__subtitle}>{subtitle}</p>
-      <p className={styles.articalItem__date}>
-        {`${createdAt.slice(8, 10)} / ${createdAt.slice(5, 7)} / ${createdAt.slice(0, 4)}`}
-      </p>
+
+      <Link href={`/${place}/${id}`}><a className={styles.articalItem__link}>{"Читать..."}</a></Link>
     </li>
   )
 }
