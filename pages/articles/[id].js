@@ -16,7 +16,7 @@ const ArticlePage = ({ articleData = { attributes: {} } }) => {
     <section className={styles.article}>
       <HeadPage
         title={titlePage}
-        description={`${subtitle}`}
+        description={subtitle}
         keywords="Авторская статья по биологии"
       />
       <div className={styles.article__content}>
