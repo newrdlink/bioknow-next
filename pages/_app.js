@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import styles from '../styles/variables.module.scss'
-import { Header, Footer, CircleIndicator } from 'components'
+import { Header, Footer, CircleIndicator, MobMenu } from 'components'
+import { WidthScreen } from 'utils/widthScreen'
 import Script from 'next/script'
 
 function MyApp({ Component, pageProps }) {
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
     >
       <Script src="/index.js" type='text/javascript' />
       <CircleIndicator />
+      {WidthScreen().width < 500 && <MobMenu />}
       <Header />
       <Component {...pageProps} {...styles.primary} />
       <Footer />

@@ -10,9 +10,9 @@ const Header = () => {
       <Logo />
       <div className={styles.header__content}>
         {WidthScreen().width > 500 && <Nav />}
-        <Contacts />
+        {WidthScreen().width > 500 && <Contacts />}
       </div>
-
+      {WidthScreen().width < 500 && <Contacts />}
     </header>
   )
 }

@@ -1,0 +1,33 @@
+@import '/styles/variables.module';
+
+.mobMenuItem {
+  position: relative;
+  display: flex;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.mobMenuItem__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.mobMenuItem__text {
+  border-radius: 5px;
+  width: 200px;
+  flex: 1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobMenuItem__link {
+  font: $font-mob-nav-m;
+  text-transform: uppercase;
+  text-decoration: none;
+}
