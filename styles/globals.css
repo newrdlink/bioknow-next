@@ -15,6 +15,11 @@ a {
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 .root {
   position: relative;
   max-width: 1440px;
